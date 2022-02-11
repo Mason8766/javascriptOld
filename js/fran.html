@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Useless Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="application/javascript">
+
+        console.log("JS WORKING");
+        const sources = ["8093c9a8b36b3c50784d46ed0154af62_400x400.jpeg", "Images/Homer.png", "images/Jake_Peralta", "images/levi_Ackermann", "images/Peter", "images/spongebob"]; 
+        const colours = ["color:yellow", "color:blue", "color:green", "color:red", "color:orange", "color:purple"];
+        const names =   ["Finn!", "Homer!", "Jake Peralta!", "Levi Ackerman!", "Family Guy!", "Spongebob!"];
+        var count = 0;
+
+    function CharacterSelect() {
+        console.log("Clicked");
+        var image = document.getElementsByTagName("img")[0];
+        var body = document.getElementsByTagName("body")[0];
+        var name = document.getElementById("Header");
+
+        image.src=sources[count];
+        body.style=colours[count];
+        name.innerHTML=names[count];
+
+    if (count == sources.length - 1) {
+        count = 0;
+    } else {
+        count+=1;
+    }
+        } 
+         </script>
+    </head>
+
+    <body id="background">
+
+        <h1 id="Header">Which Character are you Today?</h1>
+        <button id="button" onClick="CharacterSelect()">Press Me!</button> 
+        <img src="">
+    </body>
+</html>

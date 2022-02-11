@@ -1,0 +1,23 @@
+body{
+    font-size: 200%;
+    background-image: url("../images/background.jpg");
+    background-size: 80%;
+}
+#form{
+
+    background-color: white;
+    margin-right: 70%;
+    
+}
+table { 
+font-size: 200%;
+border: 1px solid black;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+}
+
+#btnDelete,#myCheckbox{
+    width: 100px;
+    height: 50px;
+}   
